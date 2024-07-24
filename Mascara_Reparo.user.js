@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Mascara Reparo
 // @namespace   Violentmonkey Scripts
-// @description workrelatedstuff
+// @description Mascara para perfilamento
 // @copyright   2024, lowdepth
 // @match       http://siwhw01a/UnificadoProjetos/stavancado/Tratativa/Tratar*
 // @match       https://siwhw01a/Unificado/stavancado/Tratativa/Tratar?*
@@ -9,10 +9,9 @@
 // @grant       GM.setValue
 // @grant       GM.getValue
 // @version     1.9.4
-// @author      lowdepth
+// @author      Marcelo B
+// @updateURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
-// @license     MIT
-// @description 11/07/2024, 09:02:17
 // ==/UserScript==
 //test
 var mailing = document.getElementById("DadosMailing_Descricao").value;
