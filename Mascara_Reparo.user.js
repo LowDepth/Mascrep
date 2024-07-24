@@ -10,6 +10,7 @@
 // @grant       GM.getValue
 // @version     1.9.3
 // @author      lowdepth
+// @downloadURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
 // @license     MIT
 // @description 11/07/2024, 09:02:17
 // ==/UserScript==
