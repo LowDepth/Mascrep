@@ -10,8 +10,8 @@
 // @grant       GM.getValue
 // @version     1.9.6
 // @author      Marcelo B
-// @updateURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
-// @downloadURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
+// @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
+// @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // ==/UserScript==
 
 //teste blablabla
