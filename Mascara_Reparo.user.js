@@ -8,12 +8,13 @@
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
 // @grant       GM.setValue
 // @grant       GM.getValue
-// @version     1.9.4
+// @version     1.9.5
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/blob/3caa2f48f7e5327e9835ae594c6fd6f47e3c74c3/Mascara_Reparo.user.js
 // ==/UserScript==
-//test
+
+//teste 1234
 var mailing = document.getElementById("DadosMailing_Descricao").value;
 var protocolo = document.getElementById("idProtocolo").innerText;
 var numReparo = "";
