@@ -6,9 +6,8 @@
 // @match       http://siwhw01a/UnificadoProjetos/stavancado/Tratativa/Tratar*
 // @match       https://siwhw01a/Unificado/stavancado/Tratativa/Tratar?*
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
-// @grant       GM.setValue
-// @grant       GM.getValue
-// @version     1.9.7.3
+// @grant       none
+// @version     1.9.7.4
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
@@ -288,7 +287,5 @@ document.getElementById("Observacao").setAttribute("style","width: 1409px; heigh
 })();
 
 if (mailing === "Tela Unica") {document.getElementById("CamposProtocolo_14__Descricao").style = "resize: vertical";};
-
-
 
 };
