@@ -6,15 +6,61 @@
 // @match       http://siwhw01a/UnificadoProjetos/stavancado/Tratativa/Tratar*
 // @match       https://siwhw01a/Unificado/stavancado/Tratativa/Tratar?*
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
+// @match       http://10.121.245.200/stu/site/prioridades-cl/cadastrar/*
 // @grant       none
-// @version     1.9.7.4
+// @version     1.9.8
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // ==/UserScript==
 
+if (location.hostname === '10.121.245.200') {
+  document.getElementById("area_descdemanda").style = "height: 449px;";
+  const dados = {
+    uf: "",
+    reparo: "",
+    ba: "",
+    nome: "",
+    telefone: ""
+  };
+
+  function colocarDados(uf, reparo, ba, nome, telefone) {
+    document.getElementById("uf").value = uf ;
+    document.getElementById("terminal_circuito").value = reparo ;
+    document.getElementById("numero_ba_click").value = ba ;
+    document.getElementById("nome_assinante").value = nome ;
+    document.getElementById("contato_assinante").value = telefone ;
+  };
+
+  (function() {
+      'use strict';
+
+      window.Mascara = () => {
+        const infoDesc = document.getElementById("area_descdemanda").value;
+        const infoDescSplitted = infoDesc.split("\n");
+        dados.uf = infoDescSplitted[0].substring(4);
+        dados.reparo = infoDescSplitted[1].substring(14);
+        dados.ba = infoDescSplitted[3].substring(4);
+        dados.nome = infoDescSplitted[4].substring(6);
+        dados.telefone = infoDescSplitted[5].substring(19);
+        console.log(infoDescSplitted);
+        console.log(dados);
+        colocarDados(dados.uf, dados.reparo, dados.ba, dados.nome, dados.telefone);
+
+      };
+
+      document.querySelector('body').addEventListener("keydown", (event) => {
+          if (event.key === "[") {  //Coloca aqui atalho para Home Newtork
+              window.Mascara();
+          }
+      });
+  })();
+
+//END OF LOCALHOSTNAME IF
+}else {
+
 if (document.getElementById("SomenteLeitura").value == "False" ) {
-  
+
 var mailing = document.getElementById("DadosMailing_Descricao").value;
 var protocolo = document.getElementById("idProtocolo").innerText;
 var numReparo = "";
@@ -288,4 +334,7 @@ document.getElementById("Observacao").setAttribute("style","width: 1409px; heigh
 
 if (mailing === "Tela Unica") {document.getElementById("CamposProtocolo_14__Descricao").style = "resize: vertical";};
 
-};
+};// END OF SOMENTE LEITURA IF
+
+
+};// END OF LOCALHOSTNAME ELSE
