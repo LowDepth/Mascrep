@@ -1,4 +1,3 @@
-// ==UserScript==
 // @name        Mascara Reparo
 // @namespace   Violentmonkey Scripts
 // @description Mascara para perfilamento
@@ -8,12 +7,14 @@
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
 // @grant       GM.setValue
 // @grant       GM.getValue
-// @version     1.9.7.1
+// @version     1.9.7.2
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // ==/UserScript==
 
+if (document.getElementById("SomenteLeitura").value == "False" ) {
+  
 var mailing = document.getElementById("DadosMailing_Descricao").value;
 var protocolo = document.getElementById("idProtocolo").innerText;
 var numReparo = "";
@@ -286,3 +287,7 @@ document.getElementById("Observacao").setAttribute("style","width: 1409px; heigh
 })();
 
 if (mailing === "Tela Unica") {document.getElementById("CamposProtocolo_14__Descricao").style = "resize: vertical";};
+
+
+
+};
