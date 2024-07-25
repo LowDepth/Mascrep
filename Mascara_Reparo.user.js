@@ -8,7 +8,7 @@
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
 // @match       http://10.121.245.200/stu/site/prioridades-cl/cadastrar/*
 // @grant       none
-// @version     1.9.8
+// @version     1.9.8.1
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
@@ -46,12 +46,12 @@ if (location.hostname === '10.121.245.200') {
         console.log(infoDescSplitted);
         console.log(dados);
         colocarDados(dados.uf, dados.reparo, dados.ba, dados.nome, dados.telefone);
-
       };
 
       document.querySelector('body').addEventListener("keydown", (event) => {
           if (event.key === "[") {  //Coloca aqui atalho para Home Newtork
               window.Mascara();
+              document.getElementById("area_descdemanda").value = "Cliente ameaça cancelamento / Critico na central, favor priorizar para garantir tratativa do reparo.";
           }
       });
   })();
