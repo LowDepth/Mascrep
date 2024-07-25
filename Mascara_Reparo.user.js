@@ -1,3 +1,4 @@
+// ==UserScript==
 // @name        Mascara Reparo
 // @namespace   Violentmonkey Scripts
 // @description Mascara para perfilamento
@@ -7,7 +8,7 @@
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
 // @grant       GM.setValue
 // @grant       GM.getValue
-// @version     1.9.7.2
+// @version     1.9.7.3
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
