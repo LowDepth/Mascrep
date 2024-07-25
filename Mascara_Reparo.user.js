@@ -8,13 +8,12 @@
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
 // @grant       GM.setValue
 // @grant       GM.getValue
-// @version     1.9.7
+// @version     1.9.7.1
 // @author      Marcelo B
 // @updateURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // ==/UserScript==
 
-//teste 200
 var mailing = document.getElementById("DadosMailing_Descricao").value;
 var protocolo = document.getElementById("idProtocolo").innerText;
 var numReparo = "";
@@ -125,8 +124,6 @@ function zezin123() { //funcao que preenche o que falta ser preenchido
   ddd = contato.substring(0, 2);
   uf = uf + Object.keys(DDDs).find((state) => DDDs[state].includes(+ddd));
 };
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////Funcao NOVA FIBRA////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -288,7 +285,4 @@ document.getElementById("Observacao").setAttribute("style","width: 1409px; heigh
     });
 })();
 
-
 if (mailing === "Tela Unica") {document.getElementById("CamposProtocolo_14__Descricao").style = "resize: vertical";};
-
-
