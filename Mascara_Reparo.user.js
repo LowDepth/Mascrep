@@ -8,7 +8,7 @@
 // @match       http://operacao-sisweb/Unificado/stavancado/Tratativa/Tratar*
 // @match       http://10.121.245.200/stu/site/prioridades-cl/cadastrar/*
 // @grant       none
-// @version     1.9.8.2
+// @version     1.9.8.3
 // @author      Marcelo B
 // @updateURL	  https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
 // @downloadURL	https://github.com/LowDepth/Mascrep/raw/main/Mascara_Reparo.user.js
